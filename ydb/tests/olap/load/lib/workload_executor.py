@@ -1458,6 +1458,7 @@ class WorkloadTestBase(LoadSuiteBase):
                 deploy_results = deploy_binaries_to_hosts(
                     binary_files, target_hosts, self.binaries_deploy_path
                 )
+                logging.info(f"Deployment results: {deploy_results}")
 
                 # Собираем информацию о результатах деплоя
                 deployed_nodes = []
@@ -1467,6 +1468,7 @@ class WorkloadTestBase(LoadSuiteBase):
                     binary_result = deploy_results.get(node.host, {}).get(
                         self.workload_binary_name, {}
                     )
+                    logging.info(f"Deployment result for {node.host} is {binary_result}")
                     success = binary_result.get("success", False)
 
                     if success:

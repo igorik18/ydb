@@ -16,7 +16,7 @@ class WorkloadTopicKafkaBase(WorkloadTestBase):
         'nemesis_enabled', [True, False],
         ids=['nemesis_true', 'nemesis_false']
     )
-    def test_workload_kv(self, nemesis_enabled: bool):
+    def test_workload_topic_kafka(self, nemesis_enabled: bool):
         command_args_template = (
             "--endpoint grpc://{node_host}:2135 "
             f"--database /{YdbCluster.ydb_database} "

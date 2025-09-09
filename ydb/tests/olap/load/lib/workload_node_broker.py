@@ -16,7 +16,7 @@ class WorkloadNodeBrokerBase(WorkloadTestBase):
         'nemesis_enabled', [True, False],
         ids=['nemesis_true', 'nemesis_false']
     )
-    def test_workload_kv(self, nemesis_enabled: bool):
+    def test_workload_node_broker(self, nemesis_enabled: bool):
         command_args_template = (
             "--endpoint grpc://{node_host}:2135 "
             "--mon-endpoint {node_host}:8765 "
