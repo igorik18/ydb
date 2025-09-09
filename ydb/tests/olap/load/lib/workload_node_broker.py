@@ -9,7 +9,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 class WorkloadNodeBrokerBase(WorkloadTestBase):
-    workload_binary_name = 'workload_node_broker'
+    workload_binary_name = 'node_broker'
     workload_env_var = 'NODE_BROKER_WORKLOAD_BINARY'
 
     @pytest.mark.parametrize(

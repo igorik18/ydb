@@ -9,7 +9,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 class WorkloadCtasBase(WorkloadTestBase):
-    workload_binary_name = 'workload_ctas'
+    workload_binary_name = 'ctas'
     workload_env_var = 'CTAS_WORKLOAD_BINARY'
 
     @pytest.mark.parametrize(

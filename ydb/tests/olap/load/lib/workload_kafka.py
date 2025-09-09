@@ -9,7 +9,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 class WorkloadKafkaBase(WorkloadTestBase):
-    workload_binary_name = 'workload_kafka'
+    workload_binary_name = 'kafka_streams_test'
     workload_env_var = 'KAFKA_WORKLOAD_BINARY'
 
     @pytest.mark.parametrize(

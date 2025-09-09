@@ -9,7 +9,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 class WorkloadTransferBase(WorkloadTestBase):
-    workload_binary_name = 'workload_transfer'
+    workload_binary_name = 'transfer'
     workload_env_var = 'TRANSFER_WORKLOAD_BINARY'
 
     @pytest.mark.parametrize(
